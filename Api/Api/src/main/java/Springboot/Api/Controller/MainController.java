@@ -27,7 +27,7 @@ public class MainController {
     public ProductService service;
     @PostMapping("/products")
     public ResponseEntity<Object> addProduct(@RequestBody Products p)  throws ResourceNotFoundException{
-        logger.debug("creating product...");
+        logger.debug("creating productssss...");
         if(service.addProduct(p))
         {
 
