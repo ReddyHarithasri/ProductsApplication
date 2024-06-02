@@ -1,0 +1,108 @@
+17:07:19.332 [restartedMain] INFO   Springboot.Api.ApiApplication -Starting ApiApplication using Java 20.0.1 with PID 12044 (C:\Users\40038234\Downloads\Api (1)\Api\target\classes started by 40038234 in C:\Users\40038234\Downloads\Api (1)\Api)
+17:07:19.417 [restartedMain] DEBUG  Springboot.Api.ApiApplication -Running with Spring Boot v3.2.1, Spring v6.1.2
+17:07:19.418 [restartedMain] INFO   Springboot.Api.ApiApplication -No active profile set, falling back to 1 default profile: "default"
+17:07:19.471 [restartedMain] INFO   o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+17:07:19.472 [restartedMain] INFO   o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+17:07:20.206 [restartedMain] INFO   o.s.d.r.c.RepositoryConfigurationDelegate -Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+17:07:20.266 [restartedMain] INFO   o.s.d.r.c.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 56 ms. Found 1 MongoDB repository interface.
+17:07:21.013 [restartedMain] INFO   o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port 8080 (http)
+17:07:21.026 [restartedMain] INFO   o.a.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8080"]
+17:07:21.031 [restartedMain] INFO   o.a.catalina.core.StandardService -Starting service [Tomcat]
+17:07:21.031 [restartedMain] INFO   o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/10.1.17]
+17:07:21.085 [restartedMain] INFO   o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+17:07:21.086 [restartedMain] INFO   o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 1613 ms
+17:07:21.280 [restartedMain] INFO   org.mongodb.driver.client -MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync", "version": "4.11.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/20.0.1+9-29"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@1fc2fe68, com.mongodb.Jep395RecordCodecProvider@13f3c5b, com.mongodb.KotlinCodecProvider@72ba3016]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=UNSPECIFIED, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+17:07:21.307 [cluster-ClusterId{value='65bb8271431ac964df54e119', description='null'}-localhost:27017] INFO   org.mongodb.driver.cluster -Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=26821200}
+17:07:21.544 [restartedMain] INFO   o.s.b.d.a.OptionalLiveReloadServer -LiveReload server is running on port 35729
+17:07:21.967 [restartedMain] WARN   o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'apiDescriptionReader' defined in URL [jar:file:/C:/Users/40038234/.m2/repository/io/springfox/springfox-spring-web/2.7.0/springfox-spring-web-2.7.0.jar!/springfox/documentation/spring/web/scanners/ApiDescriptionReader.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'cachingOperationReader' defined in URL [jar:file:/C:/Users/40038234/.m2/repository/io/springfox/springfox-spring-web/2.7.0/springfox-spring-web-2.7.0.jar!/springfox/documentation/spring/web/scanners/CachingOperationReader.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'apiOperationReader' defined in URL [jar:file:/C:/Users/40038234/.m2/repository/io/springfox/springfox-spring-web/2.7.0/springfox-spring-web-2.7.0.jar!/springfox/documentation/spring/web/readers/operation/ApiOperationReader.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'documentationPluginsManager': Unsatisfied dependency expressed through field 'documentationPlugins': Error creating bean with name 'documentationPluginRegistry': 'void org.springframework.util.Assert.notNull(java.lang.Object)'
+17:07:21.973 [restartedMain] INFO   o.a.catalina.core.StandardService -Stopping service [Tomcat]
+17:07:21.983 [restartedMain] INFO   o.s.b.a.l.ConditionEvaluationReportLogger -
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+17:07:22.011 [restartedMain] ERROR  o.s.b.d.LoggingFailureAnalysisReporter -
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
+
+    org.springframework.plugin.core.support.AbstractTypeAwareSupport$BeansOfTypeTargetSource.<init>(AbstractTypeAwareSupport.java:135)
+
+The following method did not exist:
+
+    'void org.springframework.util.Assert.notNull(java.lang.Object)'
+
+The calling method's class, org.springframework.plugin.core.support.AbstractTypeAwareSupport$BeansOfTypeTargetSource, was loaded from the following location:
+
+    jar:file:/C:/Users/40038234/.m2/repository/org/springframework/plugin/spring-plugin-core/1.2.0.RELEASE/spring-plugin-core-1.2.0.RELEASE.jar!/org/springframework/plugin/core/support/AbstractTypeAwareSupport$BeansOfTypeTargetSource.class
+
+The called method's class, org.springframework.util.Assert, is available from the following locations:
+
+    jar:file:/C:/Users/40038234/.m2/repository/org/springframework/spring-core/6.1.2/spring-core-6.1.2.jar!/org/springframework/util/Assert.class
+
+The called method's class hierarchy was loaded from the following locations:
+
+    org.springframework.util.Assert: file:/C:/Users/40038234/.m2/repository/org/springframework/spring-core/6.1.2/spring-core-6.1.2.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains compatible versions of the classes org.springframework.plugin.core.support.AbstractTypeAwareSupport$BeansOfTypeTargetSource and org.springframework.util.Assert
+
+17:18:13.082 [restartedMain] INFO   Springboot.Api.ApiApplication -Starting ApiApplication using Java 20.0.1 with PID 16236 (C:\Users\40038234\Downloads\Api (1)\Api\target\classes started by 40038234 in C:\Users\40038234\Downloads\Api (1)\Api)
+17:18:13.083 [restartedMain] DEBUG  Springboot.Api.ApiApplication -Running with Spring Boot v3.2.1, Spring v6.1.2
+17:18:13.084 [restartedMain] INFO   Springboot.Api.ApiApplication -No active profile set, falling back to 1 default profile: "default"
+17:18:13.144 [restartedMain] INFO   o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+17:18:13.144 [restartedMain] INFO   o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+17:18:13.840 [restartedMain] INFO   o.s.d.r.c.RepositoryConfigurationDelegate -Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+17:18:13.895 [restartedMain] INFO   o.s.d.r.c.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 50 ms. Found 1 MongoDB repository interface.
+17:18:14.592 [restartedMain] INFO   o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port 8080 (http)
+17:18:14.605 [restartedMain] INFO   o.a.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8080"]
+17:18:14.608 [restartedMain] INFO   o.a.catalina.core.StandardService -Starting service [Tomcat]
+17:18:14.608 [restartedMain] INFO   o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/10.1.17]
+17:18:14.662 [restartedMain] INFO   o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+17:18:14.663 [restartedMain] INFO   o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 1517 ms
+17:18:14.857 [restartedMain] INFO   org.mongodb.driver.client -MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync", "version": "4.11.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/20.0.1+9-29"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@dbfc955, com.mongodb.Jep395RecordCodecProvider@1e69922b, com.mongodb.KotlinCodecProvider@6376c341]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=UNSPECIFIED, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+17:18:14.886 [cluster-ClusterId{value='65bb84fe8492cb7ae9b86f7d', description='null'}-localhost:27017] INFO   org.mongodb.driver.cluster -Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=30620200}
+17:18:15.123 [restartedMain] INFO   o.s.b.d.a.OptionalLiveReloadServer -LiveReload server is running on port 35729
+17:18:15.511 [restartedMain] WARN   o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'apiDescriptionReader' defined in URL [jar:file:/C:/Users/40038234/.m2/repository/io/springfox/springfox-spring-web/2.7.0/springfox-spring-web-2.7.0.jar!/springfox/documentation/spring/web/scanners/ApiDescriptionReader.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'cachingOperationReader' defined in URL [jar:file:/C:/Users/40038234/.m2/repository/io/springfox/springfox-spring-web/2.7.0/springfox-spring-web-2.7.0.jar!/springfox/documentation/spring/web/scanners/CachingOperationReader.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'apiOperationReader' defined in URL [jar:file:/C:/Users/40038234/.m2/repository/io/springfox/springfox-spring-web/2.7.0/springfox-spring-web-2.7.0.jar!/springfox/documentation/spring/web/readers/operation/ApiOperationReader.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'documentationPluginsManager': Unsatisfied dependency expressed through field 'documentationPlugins': Error creating bean with name 'documentationPluginRegistry': 'void org.springframework.util.Assert.notNull(java.lang.Object)'
+17:18:15.519 [restartedMain] INFO   o.a.catalina.core.StandardService -Stopping service [Tomcat]
+17:18:15.530 [restartedMain] INFO   o.s.b.a.l.ConditionEvaluationReportLogger -
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+17:18:15.556 [restartedMain] ERROR  o.s.b.d.LoggingFailureAnalysisReporter -
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
+
+    org.springframework.plugin.core.support.AbstractTypeAwareSupport$BeansOfTypeTargetSource.<init>(AbstractTypeAwareSupport.java:135)
+
+The following method did not exist:
+
+    'void org.springframework.util.Assert.notNull(java.lang.Object)'
+
+The calling method's class, org.springframework.plugin.core.support.AbstractTypeAwareSupport$BeansOfTypeTargetSource, was loaded from the following location:
+
+    jar:file:/C:/Users/40038234/.m2/repository/org/springframework/plugin/spring-plugin-core/1.2.0.RELEASE/spring-plugin-core-1.2.0.RELEASE.jar!/org/springframework/plugin/core/support/AbstractTypeAwareSupport$BeansOfTypeTargetSource.class
+
+The called method's class, org.springframework.util.Assert, is available from the following locations:
+
+    jar:file:/C:/Users/40038234/.m2/repository/org/springframework/spring-core/6.1.2/spring-core-6.1.2.jar!/org/springframework/util/Assert.class
+
+The called method's class hierarchy was loaded from the following locations:
+
+    org.springframework.util.Assert: file:/C:/Users/40038234/.m2/repository/org/springframework/spring-core/6.1.2/spring-core-6.1.2.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains compatible versions of the classes org.springframework.plugin.core.support.AbstractTypeAwareSupport$BeansOfTypeTargetSource and org.springframework.util.Assert
+
